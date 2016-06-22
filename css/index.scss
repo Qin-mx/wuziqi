@@ -1,0 +1,181 @@
+body{
+	margin:0;
+	padding:0;
+	background: url(../img/tu1.jpg)no-repeat;
+	background-size:1366px 680px;
+}
+ul,li,h1,h2{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+@font-face{
+	font-family: 'FZSTK';
+	src:
+	local('叶根友行书繁'),
+	url("../font/叶根友行书繁.ttf")format('ttF'),
+}
+#canvas{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	margin:auto;
+	border:1px solid black;
+}
+.cartel {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	.tips {
+		width: 600px;
+		height: 400px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		&:hover #close::after {
+			opacity: 1;
+			transform: none;
+		}
+		#tishi{
+			width:150px;
+			height:300px;
+			font-family: "FZSTK";
+			font-size:100px;
+			font-weight: bolder;
+			background: url(../img/hei.png)repeat;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+			color:#fff;
+			line-height: 150px;
+			text-align: center;
+		}
+		#close::after {
+			opacity: 0;
+			transform: scale(0.8, 0.8);
+			transition:  opacity .6s ease;
+			content: 'X';
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			right: -15px;
+			top: -15px;
+			background: black;
+			color: #fff;
+			text-align: center;
+			line-height: 30px;
+			font-family: "consolas";
+		}
+		span {
+			cursor: pointer;
+			margin-top: 330px;
+			display: inline-block;
+			width:200px;
+			height:60px;
+			font-family: "FZSTK";
+			line-height: 50px;
+			font-size:20px;
+			/*padding: 10px 30px;*/
+			color: #fff;
+			background: url(../img/1.png)no-repeat;
+			&:hover{
+			color:#26ff66;
+		}
+		}
+	}
+}
+#save{
+	display:none;
+	position:absolute;
+	right:220px;
+	top:30px;
+	background: url(../img/3.png)no-repeat;
+	font-family: "FZSTK";
+	/*padding:15px 20px;*/
+	color:#fff;
+	font-size: 30px;
+	font-weight: bolder;
+	&:hover{
+			color:#26ff66;
+		}
+}
+.fanhui{
+	display:none;
+	background: url(../img/3.png)no-repeat;
+	position:absolute;
+	right:220px;
+	top:80px;
+	font-family: "FZSTK";
+	color:#fff;
+	font-size: 30px;
+	font-weight: bolder;
+	&:hover{
+			color:#26ff66;
+		}
+}
+.start{
+	position:absolute;
+	left:100px;
+	top:50px;
+	width:100px;
+	height:400px;
+		.button{
+			padding:40px 60px;
+			margin:20px auto;
+			background: url(../img/2.png)no-repeat;
+			color: #fff;
+			font-family: "FZSTK";
+			font-weight: bolder;
+			font-size: 40px;
+			line-height: 30px;
+			border-radius: 10px;
+			outline: none;
+			border:none;
+		}
+		.button:hover{
+			color:#26ff66;
+		}
+	}
+
+.jiaol{
+	width:300px;
+	height:300px;
+	background:url(../img/5.png)no-repeat;
+	background-size: 300px 300px;
+	position:absolute;
+	top:300px;
+	left:100px;
+}
+.sy{
+	position: absolute;
+	bottom:0px;
+	right:0px;
+	width:30px;
+	height:30px;
+	background: url(../img/player_bg.png);
+    background-position: -189px 0px;
+}
+.sy1{
+	position: absolute;
+	bottom:0px;
+	right:0px;
+	width:30px;
+	height:30px;
+	background: url(../img/player_bg.png) no-repeat -152px -63px;
+}
+

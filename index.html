@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>五子棋</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="bower_components\jquery/dist/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+
+	<canvas id="canvas" width="600" height="600"></canvas>
+	<div class="start">
+		<input type="button" value="开始游戏" class="button" data-d="kai">
+		<input type="button" value="难度选择" class="button" data-d="xuan">
+	</div>
+	<div class="cartel">
+		<div class="tips">
+			<h6 id="tishi"></h6>
+			<i id="close"></i>
+			<span id="restart">再来一局</span>
+			<span id="qipu">生成棋谱</span>
+		</div>
+	</div>
+	<a id="save" href="" download="">保存棋谱</a>
+	<div class="fanhui">返回</div>
+	<div class="jiaol"></div>
+	<div class="sy"></div>
+	<audio id="b_play" src="music/022.wav"></audio>
+	<audio id="w_play"src="music/024.wav"></audio>
+	<audio id="z_play"src="music/群星 - 平沙落雁.mp3"></audio>
+</body>
+</html>
